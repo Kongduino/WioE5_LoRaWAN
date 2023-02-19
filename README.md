@@ -3,10 +3,13 @@
 A fork of the LoRaWAN library for the Wio-E5, specifically targeting the Wio Terminal+LoRaWAN Chassis, which is not on GitHub, as far as I can tell. It adds a few commands and facilities:
 
 * EEPROM: save/load bytes from the Wio E5's EEPROM.
+
   A `Test_EEPROM` sketch has been added to the examples.
 * SNR: The `receivePacketP2PMode()` function now returns SNR along with RSSI.
+
   The `p2p_rx` / `p2p_tx` sketches use this facility.
 * TRNG
+
   TRNG is used in the `Test_EEPROM` and `p2p_rx` / `p2p_tx` sketches.
 
 I have left the `ABP` and `OTAA` sketches alone, as I am dealing only with LoRa here.
