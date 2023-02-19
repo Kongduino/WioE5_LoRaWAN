@@ -1,0 +1,83 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LoRaWanClass	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+getVersion	KEYWORD2
+getId	KEYWORD2
+setId	KEYWORD2
+setKey	KEYWORD2
+setDataRate	KEYWORD2
+setAdaptiveDataRate	KEYWORD2
+setPower	KEYWORD2
+setPort	KEYWORD2
+setChannel	KEYWORD2
+setChannel	KEYWORD2
+setChannel	KEYWORD2
+transferPacket	KEYWORD2
+transferPacket	KEYWORD2
+transferPacketWithConfirmed	KEYWORD2
+transferPacketWithConfirmed	KEYWORD2
+receivePacket	KEYWORD2
+transferProprietaryPacket	KEYWORD2
+transferProprietaryPacket	KEYWORD2
+setDeciveMode	KEYWORD2
+setOTAAJoin	KEYWORD2
+setUnconfirmedMessageRepeatTime	KEYWORD2
+setConfirmedMessageRetryTime	KEYWORD2
+setReceiceWindowFirst	KEYWORD2
+setReceiceWindowFirst	KEYWORD2
+setReceiceWindowSecond	KEYWORD2
+setReceiceWindowSecond	KEYWORD2
+setDutyCycle	KEYWORD2
+setJoinDutyCycle	KEYWORD2
+setReceiceWindowDelay	KEYWORD2
+setClassType	KEYWORD2
+setDeviceLowPower	KEYWORD2
+setDeviceReset	KEYWORD2
+setDeviceDefault	KEYWORD2
+initP2PMode	KEYWORD2
+transferPacketP2PMode	KEYWORD2
+transferPacketP2PMode	KEYWORD2
+receivePacketP2PMode	KEYWORD2
+loraDebug	KEYWORD2
+loraDebugPrint	KEYWORD2
+getBatteryVoltage	KEYWORD2
+setEEPROM	KEYWORD2
+getEEPROM	KEYWORD2
+initRandom	KEYWORD2
+getLoRandomByte	KEYWORD2
+fillRandom	KEYWORD2
+sendCommand	KEYWORD2
+readBuffer	KEYWORD2
+waitForResponse	KEYWORD2
+sendCommandAndWaitForResponse	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#	LITERAL1
+
+_DEBUG_SERIAL_ LITERAL1
+DEFAULT_TIMEOUT LITERAL1
+DEFAULT_TIMEWAIT LITERAL1
+DEFAULT_DEBUGTIME LITERAL1
+BATTERY_POWER_PIN LITERAL1
+CHARGE_STATUS_PIN LITERAL1
+BUFFER_LENGTH_MAX LITERAL1
+_class_type_t LITERAL1
+_physical_type_t LITERAL1
+_device_mode_t LITERAL1
+_otaa_join_cmd_t LITERAL1
+_window_delay_t LITERAL1
+_band_width_t LITERAL1
+_spreading_factor_t LITERAL1
+_data_rate_t LITERAL1
+SerialLoRa	LITERAL1
