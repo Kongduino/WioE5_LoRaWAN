@@ -18,4 +18,26 @@ This fork will stay in place until SeeedStudio merges it back to the original â€
 
 I have also reformatted the library so it it confirms to the current standard (src folder, keywords.txt, etc).
 
+```c
+  lora.initRandom();
+  uint8_t buf0[16], buf1[16], addr = lora.getLoRandomByte() & 0xF0, ix;
+  lora.fillRandom(buf0, 16);
+  hexDump(buf0, 16);
+  memset(buf1, 0, 16);
+  SerialUSB.printf("Writing 16 bytes to address   0x%02x", addr);
+  for (ix = 0; ix < 16; ix++) {
+    lora.setEEPROM(addr + ix, buf0[ix]);
+    SerialUSB.write('.');
+  }
+  Serial.println(" done!");
+  SerialUSB.printf("Reading 16 bytes from address 0x%02x", addr);
+  for (ix = 0; ix < 16; ix++) {
+    buf1[ix] = lora.getEEPROM(addr + ix);
+    SerialUSB.write('.');
+  }
+  Serial.println(" done!");
+  hexDump(buf1, 16);
+```
+
+
 ![EEPROM](assets/EEPROM.png)
