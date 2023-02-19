@@ -63,13 +63,13 @@ void setup() {
   lora.fillRandom(buf0, 16);
   hexDump(buf0, 16);
   memset(buf1, 0, 16);
-  SerialUSB.printf("Writing 16 bytes to address %02x", addr);
+  SerialUSB.printf("Writing 16 bytes to address   0x%02x", addr);
   for (ix = 0; ix < 16; ix++) {
     lora.setEEPROM(addr + ix, buf0[ix]);
     SerialUSB.write('.');
   }
   Serial.println(" done!");
-  SerialUSB.printf("Reading 16 bytes from address %02x", addr);
+  SerialUSB.printf("Reading 16 bytes from address 0x%02x", addr);
   for (ix = 0; ix < 16; ix++) {
     buf1[ix] = lora.getEEPROM(addr + ix);
     SerialUSB.write('.');
