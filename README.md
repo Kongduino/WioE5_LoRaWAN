@@ -1,6 +1,6 @@
 # KLoRaWAN
 
-A fork of the LoRaWAN library for the Wio-E5, specifically targeting the Wio Terminal+LoRaWAN Chassis. It adds a few commands and facilities:
+A fork of the LoRaWAN library for the Wio-E5, specifically targeting the Wio Terminal+LoRaWAN Chassis, which is not on GitHub, as far as I can tell. It adds a few commands and facilities:
 
 * EEPROM: save/load bytes from the Wio E5's EEPROM.
   A `Test_EEPROM` sketch has been added to the examples.
