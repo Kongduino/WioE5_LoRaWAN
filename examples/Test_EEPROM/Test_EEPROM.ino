@@ -13,7 +13,7 @@
   https://github.com/Kongduino/WioE5_LoRaWAN
 */
 
-#include <KLoRaWan.h> // I renamed the fork to be sure to avoid any confusion with  the original
+#include <KLoRaWan.h> // I renamed the fork to be sure to avoid any confusion with the original
 
 void hexDump(uint8_t* buf, uint16_t len) {
   // Something similar to the Unix/Linux hexdump -C command
