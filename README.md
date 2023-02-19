@@ -14,3 +14,5 @@ I have left the `ABP` and `OTAA` sketches alone, as I am dealing only with LoRa 
 This fork will stay in place until SeeedStudio merges it back to the original – I am in contact with them and they have been very responsive.
 
 I have also reformatted the library so it it confirms to the current standard (src folder, keywords.txt, etc).
+
+![EEPROM](assets/EEPROM.png)
